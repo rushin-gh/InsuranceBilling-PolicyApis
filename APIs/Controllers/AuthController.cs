@@ -16,9 +16,10 @@ namespace APIs.Controllers
             _jwtService = jwtService;
         }
 
-        [HttpPost("get")]
+        [HttpPost("GenerateJwt")]
         public IActionResult GetJwtToken([FromBody] LoginModel loginModel)
-        {   
+        {  
+            // TODO : Username and password verification from db values and encrypted one
             if (true)
             {
                 var token = _jwtService.GenerateJwtToken(loginModel);

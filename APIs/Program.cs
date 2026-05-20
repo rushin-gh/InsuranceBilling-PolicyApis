@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 // [JWT.SERVICES.START]
-builder.Services.Configure<JwtConfigModel>(builder.Configuration.GetSection("JwtCofig"));
+builder.Services.Configure<JwtConfigModel>(builder.Configuration.GetSection("JwtConfig"));
 builder.Services.AddScoped<JwtService>();
 
 // Add JWT Authentication
