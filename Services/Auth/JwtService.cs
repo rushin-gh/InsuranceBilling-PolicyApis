@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Services.Authentication
+namespace Services.Auth
 {
     public class JwtService
     {
